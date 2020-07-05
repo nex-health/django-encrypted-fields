@@ -5,7 +5,6 @@ import django
 from django.db import models
 from django.conf import settings
 from django.core.exceptions import ImproperlyConfigured
-from django.utils import six
 from django.utils.encoding import force_text
 from django.utils.functional import cached_property
 
@@ -159,7 +158,7 @@ class EncryptedFieldMixin(object):
         return self.to_python(value)
 
     def to_python(self, value):
-        if value is None or not isinstance(value, six.string_types):
+        if value is None or not isinstance(value, (str, bytes)):
             return value
 
         if self.prefix and value.startswith(self.prefix):
