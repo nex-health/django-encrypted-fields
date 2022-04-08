@@ -20,7 +20,7 @@ setup(
         'This is a collection of Django Model Field classes '
         'that are encrypted using Keyczar.'
     ),
-    url='http://github.com/defrex/django-encrypted-fields/',
+    url='https://github.com/nex-health/django-encrypted-fields/',
     license='BSD',
     author='Aron Jones',
     author_email='aron.jones@gmail.com',
@@ -28,6 +28,6 @@ setup(
     version=version,
     install_requires=[
         'Django>=1.4',
-        'python-keyczar>=0.71c',
+        'python3-keyczar @ git+https://github.com/nex-health/python3-keyczar@main#egg=python3-keyczar',
     ],
 )
