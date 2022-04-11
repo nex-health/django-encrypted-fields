@@ -1,3 +1,2 @@
 Django>=1.4
-# python3-keyczar
 git+https://github.com/nex-health/python3-keyczar.git@main

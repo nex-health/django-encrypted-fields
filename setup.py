@@ -28,6 +28,6 @@ setup(
     version=version,
     install_requires=[
         'Django>=1.4',
-        'python3-keyczar @ git+https://github.com/nex-health/python3-keyczar@main#egg=python3-keyczar',
+        'python3-keyczar @ git+https://github.com/nex-health/python3-keyczar@main',
     ],
 )
