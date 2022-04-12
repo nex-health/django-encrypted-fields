@@ -185,9 +185,9 @@ class EncryptedFieldMixin(object):
         if value is None or value == '' or self.decrypt_only:
             return value
 
-        if isinstance(value, str):
-            value = value.encode('unicode_escape')
-            value = value.encode('ascii')
+        # if isinstance(value, str):
+            # value = value.encode('unicode_escape')
+            # value = value.encode('ascii')
         else:
             value = str(value)
 
