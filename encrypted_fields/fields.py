@@ -13,7 +13,7 @@ except ImportError:
     from django.utils.encoding import smart_str as smart_text
 
 from keyczar import keyczar
-
+import binascii
 
 class EncryptedFieldException(Exception):
     pass
